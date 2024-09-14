@@ -25,7 +25,7 @@ int main(){
         if(scanf("%d %d", &num1, &num2) == 2){
            valido = 1;
         } else {
-            fprintf(stderr, "Os numeros foram digiados incorretamente! \n");
+            fprintf(stderr, "Os números foram digiados incorretamente! \n");
             limparBuffer();
         }
     }
@@ -49,7 +49,7 @@ int main(){
             valido = 1;
         } else {
             // esse fprint é para tratamento de erro mais correto de se usar
-            fprintf(stderr, "Os 'numeros foram digiados incorretamente! \n");
+            fprintf(stderr, "Os números foram digiados incorretamente! \n");
             limparBuffer();
  
  
@@ -57,7 +57,7 @@ int main(){
     }
         switch(escolha) {
             case 1:
-                printf("a multiplicação entre %d e %d é %d", num1, num2, num1 * num2);
+                printf("A multiplicação entre %d e %d é %d", num1, num2, num1 * num2);
             break;
  
  
@@ -66,20 +66,20 @@ int main(){
                     fprintf(stderr, "0 nào pode ser divisivel");
                     limparBuffer();
                 } else{
-                 printf("a divisão entre %d e %d é %d", num1, num2,(float) num1 / num2);
+                 printf("A divisão entre %d e %d é %d", num1, num2,(float) num1 / num2);
                 }
                 break;
             case 3:
-                printf("a adicão entre %d e %d é %d", num1, num2, num1 + num2);
+                printf("A adicão entre %d e %d é %d", num1, num2, num1 + num2);
             break;
  
  
             case 4:
-                printf("a adicão entre %d e %d é %d", num1, num2, num1 - num2);
+                printf("A adicão entre %d e %d é %d", num1, num2, num1 - num2);
             break;
         }
         int res;
-        printf("\nVocê deseja continuar? [1] - sim [0] - não");
+        printf("\nVocê deseja continuar? [1] - sim [0] - não : ");
         scanf("%d", &res);
         if (res == 1){
             limpa_tela();
